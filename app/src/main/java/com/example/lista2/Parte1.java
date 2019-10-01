@@ -54,7 +54,7 @@ private Double Valor1, Valor2;
             @Override
             public void onClick(View view) {
                 double valor1= Double.parseDouble(valor1Real.getText().toString());
-
+//dasadsd
             }
         });
 
