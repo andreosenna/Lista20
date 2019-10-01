@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Parte1 extends AppCompatActivity {
 private EditText valor1Real,valor1Imaginario, valor2Real,valor2Imaginario;
@@ -52,7 +53,8 @@ private Double Valor1, Valor2;
         btCalcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // Double valor1 ;
+                double valor1= Double.parseDouble(valor1Real.getText().toString());
+
             }
         });
 
