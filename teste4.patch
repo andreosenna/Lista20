@@ -1,0 +1,16 @@
+Index: app/src/main/java/com/example/lista2/Parte1.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/lista2/Parte1.java	(date 1569966194000)
++++ app/src/main/java/com/example/lista2/Parte1.java	(date 1569966321041)
+@@ -54,7 +54,7 @@
+             @Override
+             public void onClick(View view) {
+                 double valor1= Double.parseDouble(valor1Real.getText().toString());
+-//dasadsd
++
+             }
+         });
+ 

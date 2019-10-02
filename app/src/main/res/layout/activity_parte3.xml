@@ -6,5 +6,549 @@
     android:layout_height="match_parent"
     android:background="#ffff00"
     tools:context=".Parte3">
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="+j"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/valor1Real"
+        app:layout_constraintTop_toTopOf="@+id/valor1Real" />
 
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="+j"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/valor2Real"
+        app:layout_constraintTop_toTopOf="@+id/valor2Real" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFEB3B"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="voltarInicio"
+        android:src="@android:drawable/ic_menu_revert"
+        app:layout_constraintStart_toStartOf="@+id/toolbar2"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="32dp"
+        android:layout_height="8dp"
+        android:gravity="center"
+        android:text="Voltar"
+        android:textColor="@android:color/background_light"
+        android:textSize="6sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="32dp"
+        android:layout_height="8dp"
+        android:gravity="center"
+        android:text="Proximo"
+        android:textColor="@android:color/background_light"
+        android:textSize="6sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="16dp"
+        android:background="#00009688"
+        android:backgroundTint="#00FFFFFF"
+        android:gravity="center"
+        android:text="Parte 3"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/toolbar2"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="295dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Forma Polar para Retangular"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="@string/menor"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/resultSoma3"
+        app:layout_constraintTop_toTopOf="@+id/resultSoma3" />
+
+    <TextView
+        android:id="@+id/resultSoma1"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="35dp"
+        android:background="@android:color/background_light"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView53"
+        app:layout_constraintTop_toTopOf="@+id/textView53" />
+
+    <TextView
+        android:id="@+id/resultSoma3"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/background_light"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/resultSoma1"
+        app:layout_constraintTop_toBottomOf="@+id/resultSoma1" />
+
+    <TextView
+        android:id="@+id/resultSoma4"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/background_light"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView56"
+        app:layout_constraintTop_toTopOf="@+id/resultSoma3" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="+j"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/resultSoma1"
+        app:layout_constraintTop_toTopOf="@+id/resultSoma1" />
+
+    <TextView
+        android:id="@+id/resultSoma2"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/background_light"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView54"
+        app:layout_constraintTop_toTopOf="@+id/resultSoma1" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:text="Soma:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valor1Real" />
+
+    <TextView
+        android:id="@+id/resultSubtração1"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="35dp"
+        android:background="@android:color/background_light"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView51"
+        app:layout_constraintTop_toTopOf="@+id/textView51" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="67dp"
+        android:text="Subtração"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+    <TextView
+
+        android:id="@+id/resultSubtração4"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/background_light"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView55"
+        app:layout_constraintTop_toTopOf="@+id/resultSubtração3" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="+j"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/resultSubtração1"
+        app:layout_constraintTop_toTopOf="@+id/resultSubtração1" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="@string/menor"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/resultSubtração3"
+        app:layout_constraintTop_toTopOf="@+id/resultSubtração3" />
+
+    <TextView
+        android:id="@+id/resultSubtração2"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/background_light"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView52"
+        app:layout_constraintTop_toTopOf="@+id/resultSubtração1" />
+
+    <TextView
+        android:id="@+id/resultSubtração3"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/background_light"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/resultSubtração1"
+        app:layout_constraintTop_toBottomOf="@+id/resultSubtração1" />
+
+    <TextView
+        android:id="@+id/ResultProduto1"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="35dp"
+        android:background="@android:color/background_light"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="67dp"
+        android:text="Produto:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+    <TextView
+        android:id="@+id/ResultProduto4"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/background_light"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView57"
+        app:layout_constraintTop_toTopOf="@+id/ResultProduto3" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="@string/menor"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/ResultProduto3"
+        app:layout_constraintTop_toTopOf="@+id/ResultProduto3" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="@string/menor"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/resultDivisao3"
+        app:layout_constraintTop_toTopOf="@+id/resultDivisao3" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="+j"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/ResultProduto1"
+        app:layout_constraintTop_toTopOf="@+id/ResultProduto1" />
+
+    <TextView
+        android:id="@+id/ResultProduto2"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/background_light"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView50"
+        app:layout_constraintTop_toTopOf="@+id/ResultProduto1" />
+
+    <TextView
+        android:id="@+id/ResultProduto3"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/background_light"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/ResultProduto1"
+        app:layout_constraintTop_toBottomOf="@+id/ResultProduto1" />
+
+    <TextView
+        android:id="@+id/resultDivisao1"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="35dp"
+        android:background="@android:color/background_light"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView37"
+        app:layout_constraintTop_toTopOf="@+id/textView37" />
+
+    <TextView
+        android:id="@+id/resultDivisao3"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/background_light"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/resultDivisao1"
+        app:layout_constraintTop_toBottomOf="@+id/resultDivisao1" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="+j"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/resultDivisao1"
+        app:layout_constraintTop_toTopOf="@+id/resultDivisao1" />
+
+    <TextView
+        android:id="@+id/resultDivisao4"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/background_light"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView58"
+        app:layout_constraintTop_toTopOf="@+id/resultDivisao3" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="67dp"
+        android:text="Divisão: "
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/resultDivisao2"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/background_light"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/resultDivisao1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Numero 1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Numero 2"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/valor1Real"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="52dp"
+        android:background="@android:color/background_light"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberSigned|number|numberDecimal"
+        android:paddingStart="5dp"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/valor1Imaginario"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:background="@android:color/background_light"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberSigned|number|numberDecimal"
+        android:paddingStart="5dp"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="@+id/valor1Real" />
+
+    <EditText
+        android:id="@+id/valor2Real"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/background_light"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberSigned|number|numberDecimal"
+        android:paddingStart="5dp"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="80dp"
+        android:layout_height="21dp"
+        android:gravity="center"
+        android:paddingStart="5dp"
+        android:text="Real"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="80dp"
+        android:layout_height="21dp"
+        android:gravity="center"
+        android:paddingStart="5dp"
+        android:text="Real"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="80dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:paddingStart="5dp"
+        android:text="Imaginario"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="80dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:paddingStart="5dp"
+        android:text="Imaginario"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+    <EditText
+        android:id="@+id/valor2Imaginario"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/background_light"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberSigned|number|numberDecimal"
+        android:paddingStart="5dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="10dp"
+        android:text="Calcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valor1Real" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="btProximo"
+        android:src="@android:drawable/ic_media_play"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar2"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
